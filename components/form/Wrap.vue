@@ -44,8 +44,8 @@ const dataForm3 = {
 }
 
 // TODO: Типизировать
-function setActiveSet(data: any) {
-  console.log('setActiveSet', data)
+function setActiveData(data: any) {
+  console.log('setActiveData', data)
   formData.value = data
 }
 </script>
@@ -59,9 +59,9 @@ function setActiveSet(data: any) {
   //- TODO: Реализовать смену данных форме
   .text-sm Данные должны обновлять форму
   .flex.gap-3
-    div(@click="setActiveSet(dataForm1)") setActive 1
-    div(@click="setActiveSet(dataForm2)") setActive 2
-    div(@click="setActiveSet(dataForm3)") setActive 3
+    div(@click="setActiveData(dataForm1)") setActive 1
+    div(@click="setActiveData(dataForm2)") setActive 2
+    div(@click="setActiveData(dataForm3)") setActive 3
 
 .p-4
   FormKit(
